@@ -21,9 +21,16 @@ st.write("Please answer the following questions by selecting a value (between 1 
 # Function to display radio with custom descriptions
 def display_radio_with_description(question, descriptions):
     st.write(question)
-    for value, desc in descriptions.items():
-        st.write(f"- **{value}**: {desc}")
-    return st.radio("Select your response:", list(descriptions.keys()))
+    options = list(descriptions.keys())
+    # Create a radio button with custom options
+    selected_value = st.radio("", options)
+    
+    # Display the corresponding description next to the selected radio button
+    for value in options:
+        if selected_value == value:
+            st.markdown(f"**{value}**: {descriptions[value]}")
+    
+    return selected_value
 
 # Questions with descriptions
 PS1 = display_radio_with_description(
