@@ -6,7 +6,7 @@ import pandas as pd
 
 st.title("Grocery store purchase intention predictor")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "Please answer the following questions by choosing the most suitable option, after answering all the questions, press the predict button to form a prediction on the purchase intention"
 )
 # Load the trained Random Forest model from the pickle file
 model = pd.read_pickle('rf.pkl')
