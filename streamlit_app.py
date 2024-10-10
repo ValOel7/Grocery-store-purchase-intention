@@ -18,8 +18,8 @@ st.title("Purchase Intention Prediction App")
 
 st.write("""
 This application assists you in understanding how your shopping preferences influence your purchasing intention.
-Please take a moment to select the option that best represents your thoughts for each question below. 
-Upon completing your selections, please click the 'Predict' button to view your purchase intention score, where 1 indicates a low likelihood of purchasing from this store and 5 indicates a high likelihood. A confidence score will be displayed to provide the accuracy of the prediction.
+Please take a moment to select the option that best represents your views for each question below. 
+After you have made your selections, please click the 'Predict' button to view your purchase intention score, where 1 indicates a low likelihood of purchasing from the store and 5 indicates a high likelihood of purchasing from the store. A confidence score will be displayed to provide the accuracy of the prediction.
 """)
 
 # Descriptions for radio buttons
