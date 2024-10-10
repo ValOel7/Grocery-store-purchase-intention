@@ -105,9 +105,14 @@ questions = {
 # Collect responses
 responses = {}
 for question, options in questions.items():
-    selected_value = st.radio(question, [f"{opt[0]}: {opt[1]}" for opt in options])
+    st.markdown(f"### {question}")  # Larger font for questions
+    selected_value = st.radio(
+        "",
+        [opt[1] for opt in options],
+        index=0
+    )
     # Extract the numerical value from the selected response
-    value = int(selected_value.split(':')[0])  # Get the number before the colon
+    value = int(options[[opt[1] for opt in options].index(selected_value)][0])  # Get the number from the tuple
     responses[question] = value
 
 # Input data to be used for prediction
