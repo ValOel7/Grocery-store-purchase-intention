@@ -17,8 +17,9 @@ def predict_purchase_intention(input_data):
 st.title("Purchase Intention Prediction App")
 
 st.write("""
-Please answer the following questions by selecting a value (1 to 5):
-You can view the meaning of each option directly next to the radio buttons.
+This application assists you in understanding how your shopping preferences influence your purchasing intention.
+Please take a moment to select the option that best represents your thoughts for each question below. 
+Upon completing your selections, please click the 'Predict' button to view your purchase intention score, where 1 indicates a low likelihood of purchasing from this store and 5 indicates a high likelihood. A confidence score will be displayed to provide the accuracy of the prediction.
 """)
 
 # Descriptions for radio buttons
